@@ -17,7 +17,7 @@ def load_knowledge(json_path,embedding):
     vectorstore = InMemoryVectorStore(embedding=embedding)
     json_data = load_json(json_path)
     for data in json_data:
-        text = load_text(data['text'])
-        vector = add_vectorstore(text,vectorstore)
+        text = load_text(f"../data/{data['file']}")
+        vector = add_vectorstore(text,data)
         vectorstore.add_documents(vector)
     return vectorstore

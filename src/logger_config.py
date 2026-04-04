@@ -7,7 +7,7 @@ def setup_logger():
 
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-    file_handler = logging.FileHandler(f'logs/{datetime.now().strftime("%Y%m%d-%H")}.log', encoding='utf-8')
+    file_handler = logging.FileHandler(f'../logs/{datetime.now().strftime("%Y%m%d-%H")}.log', encoding='utf-8')
     file_handler.setFormatter(formatter)
     file_handler.setLevel(logging.INFO)
 
