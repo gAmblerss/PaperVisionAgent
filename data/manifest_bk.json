@@ -1,0 +1,57 @@
+[
+  {
+    "file": "00_cover_and_metadata.txt",
+    "pages": "1-4",
+    "description": "封面、题名页、声明等前置材料"
+  },
+  {
+    "file": "01_abstract_zh.txt",
+    "pages": "5-6",
+    "description": "中文摘要"
+  },
+  {
+    "file": "02_abstract_en.txt",
+    "pages": "7-8",
+    "description": "英文摘要"
+  },
+  {
+    "file": "03_chapter1_introduction.txt",
+    "pages": "15-23",
+    "description": "第一章 绪论"
+  },
+  {
+    "file": "04_chapter2_related_theory_and_technology.txt",
+    "pages": "24-35",
+    "description": "第二章 相关理论与技术"
+  },
+  {
+    "file": "05_chapter3_ftfnet_method.txt",
+    "pages": "36-45",
+    "description": "第三章 基于时序特征和频域特征融合的时序动作定位算法"
+  },
+  {
+    "file": "06_chapter4_experiments_and_analysis.txt",
+    "pages": "46-58",
+    "description": "第四章 实验数据及结果分析"
+  },
+  {
+    "file": "07_chapter5_system_design_and_implementation.txt",
+    "pages": "59-86",
+    "description": "第五章 基于 FTF-Net 的学生课堂行为定位系统的设计与实现"
+  },
+  {
+    "file": "08_chapter6_conclusion_and_future_work.txt",
+    "pages": "87-88",
+    "description": "第六章 总结与展望"
+  },
+  {
+    "file": "09_references.txt",
+    "pages": "89-93",
+    "description": "参考文献"
+  },
+  {
+    "file": "10_acknowledgements.txt",
+    "pages": "94",
+    "description": "致谢"
+  }
+]

@@ -1,7 +1,7 @@
-from utils import load_json,load_text
+from .utils import load_json,load_text
 from langchain_core.documents import Document
 from langchain_core.vectorstores import InMemoryVectorStore
-from knowledge_loader import split_chunk
+from .knowledge_loader import split_chunk
 
 def add_vectorstore(text,info):
     chunks = split_chunk(text)
@@ -17,7 +17,8 @@ def load_knowledge(json_path,embedding):
     vectorstore = InMemoryVectorStore(embedding=embedding)
     json_data = load_json(json_path)
     for data in json_data:
-        text = load_text(f"../data/{data['file']}")
-        vector = add_vectorstore(text,data)
-        vectorstore.add_documents(vector)
+        text = load_text(f"data/{data['file']}")
+        docs = add_vectorstore(text,data)
+        print(type(docs))
+        vectorstore.add_documents(docs)
     return vectorstore
